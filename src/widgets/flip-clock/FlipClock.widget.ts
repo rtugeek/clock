@@ -5,28 +5,21 @@ const name = 'cn.widgetjs.widgets.flip_clock'
 const title = { 'zh-CN': '翻页时钟' }
 //组件描述
 const description = { 'zh-CN': '' }
-//组件关键词
-const keywords = [WidgetKeyword.RECOMMEND]
-//组件路由地址
-const path = '/widget/flip_clock'
-//配置页路由地址
-const configPagePath = undefined
-//组件关键词
 const FlipClockWidgetDefine = new Widget({
   name: name,
   title: title,
   description: description,
-  keywords: keywords,
+  keywords: [WidgetKeyword.RECOMMEND],
   lang: 'zh-CN',
+  backgroundThrottling: false,
   width: 4,
   height: 2,
   minWidth: 4,
   maxWidth: 4,
   minHeight: 2,
   maxHeight: 2,
-  previewImage: '修改为组件预览图地址',
-  path,
-  configPagePath
+  previewImage: '/images/preview_flip_clock.png',
+  path:'/widget/flip_clock',
 })
 
 export default FlipClockWidgetDefine

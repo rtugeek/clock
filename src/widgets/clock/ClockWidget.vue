@@ -24,9 +24,8 @@
 
 <script lang="ts">
 import {nextTick, ref} from "vue";
-import {TransitionPresets, useInterval, useTransition} from '@vueuse/core'
+import { useInterval} from '@vueuse/core'
 import dayjs from "dayjs";
-import {delay} from "lodash";
 
 export default {
   name: "ClockWidget",
@@ -74,10 +73,10 @@ export default {
     }
 
     useInterval(1000, {
-          callback: (counter) => {
-            updateTime();
-          }
+        callback: (counter) => {
+          updateTime();
         }
+      }
     )
     return {firstShot, minuteDeg, hourDeg, secondDeg, updateTime, getHour}
   },

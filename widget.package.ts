@@ -14,7 +14,7 @@ export default new WidgetPackage({
   devOptions: {
     folder: './src/widgets/',
     route: true,
-    devUrl: 'http://localhost:5175'
+    devUrl: 'http://localhost:5173'
   },
   widgets: [],
   permissions: []
