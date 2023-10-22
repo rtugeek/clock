@@ -3,7 +3,7 @@
   <img width="150" src="https://raw.githubusercontent.com/widget-js/widgets/master/screenshot/logo.png" alt="Widgets - Capable and ergonomic widgets." width="300">
 </a>
 <br>
-桌面组件
+桌面组件 - 时钟组件
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
   <a href="https://discord.gg/vwSAaRR8cT"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg?sanitize=true" alt="Chat"></a>
 </p>
 
-![png](screenshot/screenshot.jpg)
+![png](screenshot/screenshot.png)
 
 ### 说明
 
@@ -20,6 +20,7 @@
 ### 全部组件地址
 
 https://github.com/widget-js/widgets
+![png](screenshot/screenshot_full.jpg)
 
 ### Windows 10/11 客户端下载
 
@@ -50,14 +51,14 @@ pnpm install
 #### 4.运行
 
 ```shell
-pnpm serve
+pnpm dev
 ```
 
 ### 创建自己的组件
 
 ```shell
 // 安装组件脚手架
-npm install -g @widget-js/cli
+pnpm install -g @widget-js/cli
 // 在项目根目录运行 创建组件命令
 widget create
 ```

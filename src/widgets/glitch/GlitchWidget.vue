@@ -48,7 +48,7 @@ onMounted(() => {
 
 })
 
-function toggleScreen(e) {
+function toggleScreen(e:MouseEvent) {
   e.preventDefault();
   showGlitch.value = !showGlitch.value;
 }

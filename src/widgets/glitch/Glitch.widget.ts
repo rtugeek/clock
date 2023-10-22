@@ -18,6 +18,4 @@ const GlitchWidgetDefine = new Widget({
   previewImage: '/images/preview_glitch_clock.png',
   path:'/widget/glitch'
 })
-console.log(JSON.stringify(GlitchWidgetDefine,null,2))
-console.log(GlitchWidgetDefine.path)
 export default GlitchWidgetDefine

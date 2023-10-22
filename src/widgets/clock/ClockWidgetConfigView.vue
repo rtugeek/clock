@@ -6,13 +6,6 @@
     @apply="onApplyClick()"
     @confirm="onSaveClick()"
   >
-    <template v-slot:widget>
-      <clock-widget
-        :width="widgetParams.widthPx"
-        :height="widgetParams.heightPx"
-        :background-color="widgetData.backgroundColor"
-      ></clock-widget>
-    </template>
   </widget-edit-dialog>
 </template>
 
@@ -20,7 +13,6 @@
 import { useWidget, WidgetConfigOption, WidgetEditDialog } from '@widget-js/vue3'
 import { BrowserWindowApi, WidgetData, WidgetDataApi } from '@widget-js/core'
 import { reactive } from 'vue'
-import ClockWidget from '@/widgets/clock/ClockWidget.vue'
 import 'element-plus/dist/index.css'
 
 BrowserWindowApi.setSize(600, 350)

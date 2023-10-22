@@ -45,12 +45,12 @@
       "routes": []
     },
     {
-      "name": "cn.widgetjs.widgets.clock.flip_clock",
+      "name": "cn.widgetjs.widgets.flip_clock",
       "title": {
         "zh-CN": "翻页时钟"
       },
       "description": {
-        "zh-CN": "带有翻页动画的时钟"
+        "zh-CN": ""
       },
       "keywords": [
         "recommend"
@@ -70,7 +70,7 @@
       "resizable": true,
       "path": "/widget/flip_clock",
       "meta": {},
-      "backgroundThrottling": true,
+      "backgroundThrottling": false,
       "previewImage": "/images/preview_flip_clock.png",
       "supportDeployMode": 17,
       "routes": []
@@ -101,7 +101,7 @@
       "resizable": true,
       "path": "/widget/clock",
       "meta": {},
-      "backgroundThrottling": true,
+      "backgroundThrottling": false,
       "previewImage": "/images/preview_clock.png",
       "supportDeployMode": 17,
       "configPagePath": "/widget/config/clock",
