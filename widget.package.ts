@@ -6,6 +6,8 @@ export default new WidgetPackage({
     hash: true,
     base: '/clock',
   },
+  remoteEntry: 'https://rtugeek.gitee.io/clock',
+  remotePackage: 'https://rtugeek.gitee.io/clock/widget.json',
   name: 'cn.widgetjs.widgets.clock',
   author: 'Neo Fu',
   homepage: 'https://widgetjs.cn',
