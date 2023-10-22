@@ -1,6 +1,11 @@
 import { WidgetPackage } from '@widget-js/core'
 
 export default new WidgetPackage({
+  remote: {
+    entry: 'https://rtugeek.gitee.io/clock',
+    hash: true,
+    base: '/clock',
+  },
   name: 'cn.widgetjs.widgets.clock',
   author: 'Neo Fu',
   homepage: 'https://widgetjs.cn',
@@ -14,7 +19,7 @@ export default new WidgetPackage({
   devOptions: {
     folder: './src/widgets/',
     route: true,
-    devUrl: 'http://localhost:5173'
+    devUrl: 'http://localhost:5173/clock'
   },
   widgets: [],
   permissions: []

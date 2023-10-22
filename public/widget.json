@@ -10,6 +10,11 @@
     "zh-CN": "时钟组件"
   },
   "entry": "index.html",
+  "remote": {
+    "entry": "https://rtugeek.gitee.io/clock",
+    "hash": true,
+    "base": "/clock"
+  },
   "hash": true,
   "url": "",
   "widgets": [
@@ -50,7 +55,7 @@
         "zh-CN": "翻页时钟"
       },
       "description": {
-        "zh-CN": ""
+        "zh-CN": "带有翻页动画的数字时钟"
       },
       "keywords": [
         "recommend"

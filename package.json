@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build:local": "vite build --mode offline",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
