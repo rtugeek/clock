@@ -1,0 +1,112 @@
+{
+  "name": "cn.widgetjs.widgets.clock",
+  "version": "0.0.1",
+  "author": "Neo Fu",
+  "homepage": "https://widgetjs.cn",
+  "title": {
+    "zh-CN": "时钟组件合辑"
+  },
+  "description": {
+    "zh-CN": "时钟组件"
+  },
+  "entry": "index.html",
+  "hash": true,
+  "url": "",
+  "widgets": [
+    {
+      "name": "cn.widgetjs.widgets.clock.glitch",
+      "title": {
+        "zh-CN": "故障时钟"
+      },
+      "description": {
+        "zh-CN": "Glitch"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 4,
+      "height": 2,
+      "maxWidth": 4,
+      "webviewTag": false,
+      "maxHeight": 2,
+      "minWidth": 4,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/glitch",
+      "meta": {},
+      "backgroundThrottling": true,
+      "previewImage": "/images/preview_glitch_clock.png",
+      "supportDeployMode": 17,
+      "routes": []
+    },
+    {
+      "name": "cn.widgetjs.widgets.flip_clock",
+      "title": {
+        "zh-CN": "翻页时钟"
+      },
+      "description": {
+        "zh-CN": ""
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 4,
+      "height": 2,
+      "maxWidth": 4,
+      "webviewTag": false,
+      "maxHeight": 2,
+      "minWidth": 4,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/flip_clock",
+      "meta": {},
+      "backgroundThrottling": false,
+      "previewImage": "/images/preview_flip_clock.png",
+      "supportDeployMode": 17,
+      "routes": []
+    },
+    {
+      "name": "cn.widgetjs.widgets.clock.default",
+      "title": {
+        "zh-CN": "时钟"
+      },
+      "description": {
+        "zh-CN": "带动画的时钟"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 2,
+      "height": 2,
+      "maxWidth": 4,
+      "webviewTag": false,
+      "maxHeight": 4,
+      "minWidth": 2,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/clock",
+      "meta": {},
+      "backgroundThrottling": false,
+      "previewImage": "/images/preview_clock.png",
+      "supportDeployMode": 17,
+      "configPagePath": "/widget/config/clock",
+      "routes": []
+    }
+  ],
+  "pages": []
+}
