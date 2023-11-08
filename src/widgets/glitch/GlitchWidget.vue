@@ -12,14 +12,12 @@
 
 <script lang="ts" setup>
 import {ref, onMounted} from 'vue';
-
 let isOff = ref(true);
 let refContent = ref('');
 let showGlitch = ref(true)
 
 let newDate = new Date();
 newDate.setDate(newDate.getDate());
-
 onMounted(() => {
 
   setTimeout(() => {
@@ -185,8 +183,8 @@ a.switcher:before {
 .clock span {
   display: block;
   position: relative;
-  font-size: 70px;
-  /*line-height: 1;*/
+  font-size: 33vh;
+  ///*line-height: 1;*/
   vertical-align: middle;
 }
 
@@ -250,11 +248,7 @@ a.switcher:before {
   animation: c1 2s infinite linear alternate-reverse;
 }
 
-@media (max-width: 330px) {
-  .clock span {
-    font-size: 55px;
-  }
-}
+
 
 @-webkit-keyframes is-off {
   0% {

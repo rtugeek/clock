@@ -10,6 +10,8 @@
     "zh-CN": "时钟组件"
   },
   "entry": "index.html",
+  "remoteEntry": "https://rtugeek.gitee.io/clock",
+  "remotePackage": "https://rtugeek.gitee.io/clock/widget.json",
   "remote": {
     "entry": "https://rtugeek.gitee.io/clock",
     "hash": true,
