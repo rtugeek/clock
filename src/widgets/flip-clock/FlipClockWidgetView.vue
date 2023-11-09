@@ -184,12 +184,14 @@ html *::after {
   transform-style: preserve-3d;
   perspective: 1600px;
 }
-
+$gear-height: calc(100vh / 5);
 .gear {
+  top:0;
+  bottom: 0;
   position: absolute;
-  top: calc(100vh / 2 - 100vh / 5);
   width: 8px;
-  height: calc(100vh / 5);
+  margin:auto;
+  height: $gear-height;
   background: linear-gradient(
       to bottom,
       #000000 0%,
@@ -219,45 +221,52 @@ html *::after {
   /*   transition: all 1s ease-in-out; */
 }
 
+
 .top {
   /*   border: 1px solid #c00; */
   position: relative;
   width: 100%;
-  height: calc(50% - 15px);
+  height: calc(50% - 12px);
   background-image: linear-gradient(rgb(48, 49, 53) 0%, rgb(56, 57, 62) 100%);
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   border-top-left-radius: calc(var(--radius) * 0.65);
   border-top-right-radius: calc(var(--radius) * 0.65);
+  overflow: hidden;
 }
 
 .bottom {
   position: relative;
   /*   border: 1px solid green; */
   width: 100%;
-  height: calc(50% - 15px);
+  height: calc(50% - 12px);
   background-image: linear-gradient(rgb(57, 58, 63) 0%, rgb(65, 65, 71) 100%);
-  margin-top: 5px;
+  margin-top: 2px;
   margin-bottom: 10px;
   border-bottom-left-radius: calc(var(--radius) * 0.65);
   border-bottom-right-radius: calc(var(--radius) * 0.65);
+  overflow: hidden;
 }
 
 .text {
   font-family: 'Saira ExtraCondensed', sans-serif;
-  font-size: 80px;
+  font-size: 33vh;
   color: white;
   display: block;
   position: absolute;
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  line-height: 120px;
+  line-height: 1;
   text-align: center;
+  bottom:0;
+  transform: translateY(50%);
+  vertical-align: middle;
 }
 
 .bottom .text {
-  line-height: 0;
+  transform: translateY(-50%);
+  top:0;
+  bottom:unset;
 }
 
 .top.new,
@@ -319,7 +328,7 @@ html *::after {
     transform: rotateX(0) translateY(0px);
   }
   100% {
-    transform: rotateX(-180deg) translateY(-10px);
+    transform: rotateX(-180deg);
   }
 }
 </style>
