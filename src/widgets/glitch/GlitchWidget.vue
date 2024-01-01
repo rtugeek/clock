@@ -1,54 +1,39 @@
-<template>
-  <div class="glitch_container">
-    <a class="switcher" href="#" @click="toggleScreen"></a>
-    <div class="screen" :class="{glitch: showGlitch}">
-      <div class="clock" :class="{ 'is-off': isOff, }"><span class="time"
-                                                             :data-time="refContent">{{ refContent }}</span></div>
-      <div class="figure"></div>
-      <div class="figure-mask"></div>
-    </div>
-  </div>
-</template>
-
 <script lang="ts" setup>
-import {ref, onMounted} from 'vue';
-let isOff = ref(true);
-let refContent = ref('');
-let showGlitch = ref(true)
+import { onMounted, ref } from 'vue'
 
-let newDate = new Date();
-newDate.setDate(newDate.getDate());
+const isOff = ref(true)
+const refContent = ref('')
+const showGlitch = ref(true)
+
+const newDate = new Date()
+newDate.setDate(newDate.getDate())
 onMounted(() => {
-
   setTimeout(() => {
-    isOff.value = false;
+    isOff.value = false
   }, 2000)
 
   setInterval(() => {
+    const hours = new Date().getHours()
+    const seconds = new Date().getSeconds()
+    const minutes = new Date().getMinutes()
 
-    let hours = new Date().getHours();
-    let seconds = new Date().getSeconds();
-    let minutes = new Date().getMinutes();
+    const realTime
+      = `${(hours < 10 ? '0' : '')
+      + hours
+       } : ${
+       minutes < 10 ? '0' : ''
+       }${minutes
+       } : ${
+       seconds < 10 ? '0' : ''
+       }${seconds}`
 
-    const realTime =
-      (hours < 10 ? "0" : "") +
-      hours +
-      " : " +
-      (minutes < 10 ? "0" : "") +
-      minutes +
-      " : " +
-      (seconds < 10 ? "0" : "") +
-      seconds;
-
-    refContent.value = realTime;
-
+    refContent.value = realTime
   }, 1000)
-
 })
 
-function toggleScreen(e:MouseEvent) {
-  e.preventDefault();
-  showGlitch.value = !showGlitch.value;
+function toggleScreen(e: MouseEvent) {
+  e.preventDefault()
+  showGlitch.value = !showGlitch.value
 }
 
 // setTimeout(second_passed, 2000);
@@ -64,8 +49,23 @@ function toggleScreen(e:MouseEvent) {
 // }
 </script>
 
-<style lang="scss" scoped>
+<template>
+  <div class="glitch_container">
+    <a class="switcher" href="#" @click="toggleScreen" />
+    <div class="screen" :class="{ glitch: showGlitch }">
+      <div class="clock" :class="{ 'is-off': isOff }">
+        <span
+          class="time"
+          :data-time="refContent"
+        >{{ refContent }}</span>
+      </div>
+      <div class="figure" />
+      <div class="figure-mask" />
+    </div>
+  </div>
+</template>
 
+<style lang="scss" scoped>
 .glitch_container {
   color: #FFFFFF;
 }
@@ -247,8 +247,6 @@ a.switcher:before {
   text-shadow: -2px 0 #f00;
   animation: c1 2s infinite linear alternate-reverse;
 }
-
-
 
 @-webkit-keyframes is-off {
   0% {
@@ -1335,6 +1333,4 @@ a.switcher:before {
     background-position: 0 -32px;
   }
 }
-
-
 </style>

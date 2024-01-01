@@ -1,9 +1,10 @@
-import GlitchWidgetDefine from "./Glitch.widget";
+import type { RouteRecordRaw } from 'vue-router'
+import GlitchWidgetDefine from './Glitch.widget'
 
-const url = GlitchWidgetDefine.path;
-const name = GlitchWidgetDefine.name;
+const url = GlitchWidgetDefine.path
+const name = GlitchWidgetDefine.name
 
-const GlitchWidgetRoutes = [
+const GlitchWidgetRoutes: RouteRecordRaw[] = [
   {
     path: url,
     name: `${name}`,
@@ -11,4 +12,4 @@ const GlitchWidgetRoutes = [
   }
 ]
 
-export default GlitchWidgetRoutes;
+export default GlitchWidgetRoutes

@@ -1,12 +1,13 @@
 import { Widget, WidgetKeyword } from '@widget-js/core'
-//组件标题
+
+// 组件标题
 const title = { 'zh-CN': '故障时钟' }
-//组件描述
+// 组件描述
 const description = { 'zh-CN': 'Glitch' }
 const GlitchWidgetDefine = new Widget({
   name: 'cn.widgetjs.widgets.clock.glitch',
-  title: title,
-  description: description,
+  title,
+  description,
   keywords: [WidgetKeyword.RECOMMEND],
   lang: 'zh-CN',
   width: 4,
@@ -16,6 +17,6 @@ const GlitchWidgetDefine = new Widget({
   minHeight: 2,
   maxHeight: 2,
   previewImage: '/images/preview_glitch_clock.png',
-  path:'/widget/glitch'
+  path: '/widget/glitch'
 })
 export default GlitchWidgetDefine

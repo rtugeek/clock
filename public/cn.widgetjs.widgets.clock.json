@@ -21,6 +21,37 @@
   "url": "",
   "widgets": [
     {
+      "name": "cn.widgetjs.widgets.clock.mickey_clock",
+      "title": {
+        "zh-CN": "米奇表盘"
+      },
+      "description": {
+        "zh-CN": "Apple Watch米奇表盘"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 2,
+      "height": 2,
+      "maxWidth": 3,
+      "webviewTag": false,
+      "maxHeight": 3,
+      "minWidth": 2,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/mickey_clock",
+      "meta": {},
+      "backgroundThrottling": true,
+      "previewImage": "/images/preview_micky_clock.png",
+      "supportDeployMode": 17,
+      "routes": []
+    },
+    {
       "name": "cn.widgetjs.widgets.clock.glitch",
       "title": {
         "zh-CN": "故障时钟"

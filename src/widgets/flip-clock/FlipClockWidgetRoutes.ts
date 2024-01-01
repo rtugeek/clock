@@ -1,17 +1,18 @@
-import FlipClockWidgetDefine from './FlipClock.widget';
+import type { RouteRecordRaw } from 'vue-router'
+import FlipClockWidgetDefine from './FlipClock.widget'
 
-const path = FlipClockWidgetDefine.path;
-const name = FlipClockWidgetDefine.name;
+const path = FlipClockWidgetDefine.path
+const name = FlipClockWidgetDefine.name
 
-const FlipClockWidgetRoutes = [
+const FlipClockWidgetRoutes: RouteRecordRaw[] = [
   {
-    path: path,
+    path,
     name: `${name}`,
     component: () =>
       import(
         /* webpackChunkName: "cn.widgetjs.widgets.flip_clock" */ './FlipClockWidgetView.vue'
       ),
   },
-];
+]
 
-export default FlipClockWidgetRoutes;
+export default FlipClockWidgetRoutes

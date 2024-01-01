@@ -1,14 +1,15 @@
 <script lang="ts" setup>
 import { WidgetWrapper } from '@widget-js/vue3'
-import GlitchWidget from './GlitchWidget.vue'
+import MickeyClockWidget from './MickeyClockWidget.vue'
 </script>
 
 <template>
   <WidgetWrapper>
-    <GlitchWidget />
+    <MickeyClockWidget
+      :border-radius="22"
+    />
   </WidgetWrapper>
 </template>
 
 <style scoped>
-
 </style>
