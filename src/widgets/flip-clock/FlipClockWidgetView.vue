@@ -1,42 +1,3 @@
-<template>
-  <widget-wrapper>
-    <div class="clock-container">
-      <div class="clock">
-        <div class="flipper" ref="hourRef">
-          <div class="gear"></div>
-          <div class="gear"></div>
-          <div class="top">
-            <div class="text">00</div>
-          </div>
-          <div class="bottom">
-            <div class="text">00</div>
-          </div>
-        </div>
-        <div class="flipper" ref="minuteRef">
-          <div class="gear"></div>
-          <div class="gear"></div>
-          <div class="top">
-            <div class="text">00</div>
-          </div>
-          <div class="bottom">
-            <div class="text">00</div>
-          </div>
-        </div>
-        <div class="flipper" ref="secondRef">
-          <div class="gear"></div>
-          <div class="gear"></div>
-          <div class="top">
-            <div class="text">00</div>
-          </div>
-          <div class="bottom">
-            <div class="text">00</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </widget-wrapper>
-</template>
-
 <script lang="ts" setup>
 import { WidgetWrapper } from '@widget-js/vue3'
 import { nextTick, onMounted, ref } from 'vue'
@@ -46,8 +7,8 @@ const minuteRef = ref<HTMLElement>()
 const secondRef = ref<HTMLElement>()
 
 function flipNumber(el: HTMLElement, newNumber: string) {
-  var newTop = el.querySelector('.top')!.cloneNode(true) as HTMLElement
-  var newBottom = el.querySelector('.bottom')!.cloneNode(true) as HTMLElement
+  const newTop = el.querySelector('.top')!.cloneNode(true) as HTMLElement
+  const newBottom = el.querySelector('.bottom')!.cloneNode(true) as HTMLElement
   newTop.classList.add('new')
   newBottom.classList.add('new')
   newBottom.querySelector('.text')!.textContent = newNumber
@@ -55,26 +16,26 @@ function flipNumber(el: HTMLElement, newNumber: string) {
   el.querySelector('.top.new')!.append(newBottom)
   el.classList.add('flipping')
   el.querySelector('.top:not(.new)')!.querySelector('.text')!.textContent = newNumber
-  setTimeout(function () {
+  setTimeout(() => {
     el.querySelector('.bottom:not(.new)')!.querySelector('.text')!.textContent = newNumber
   }, 500)
 }
 
 function setTime() {
-  for (let elements of document.querySelectorAll('.flipper')) {
+  for (const elements of document.querySelectorAll('.flipper')) {
     elements.classList.remove('flipping')
   }
-  for (let elements of document.querySelectorAll('.flipper .new')) {
+  for (const elements of document.querySelectorAll('.flipper .new')) {
     elements.remove()
   }
   const now = new Date()
   let seconds = now.getSeconds().toString()
   if (seconds.length == 1) {
-    seconds = '0' + seconds
+    seconds = `0${seconds}`
   }
   let minutes = now.getMinutes().toString()
   if (minutes.length == 1) {
-    minutes = '0' + minutes
+    minutes = `0${minutes}`
   }
   let hour: string | number = now.getHours()
   // if (hour > 12) {
@@ -85,7 +46,7 @@ function setTime() {
   // }
   hour = hour.toString()
   if (hour.length == 1) {
-    hour = '0' + hour
+    hour = `0${hour}`
   }
   if (hourRef.value!.querySelector('.top>.text')!.textContent !== hour) {
     flipNumber(hourRef.value!, hour)
@@ -97,17 +58,67 @@ function setTime() {
   if (secondRef.value!.querySelector('.top>.text')!.textContent !== seconds) {
     flipNumber(secondRef.value!, seconds)
   }
-  setTimeout(function () {
+  setTimeout(() => {
     setTime()
   }, 500)
 }
-
 
 onMounted(async () => {
   await nextTick()
   setTime()
 })
 </script>
+
+<template>
+  <WidgetWrapper>
+    <div class="clock-container">
+      <div class="clock">
+        <div ref="hourRef" class="flipper">
+          <div class="gear" />
+          <div class="gear" />
+          <div class="top">
+            <div class="text">
+              00
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="text">
+              00
+            </div>
+          </div>
+        </div>
+        <div ref="minuteRef" class="flipper">
+          <div class="gear" />
+          <div class="gear" />
+          <div class="top">
+            <div class="text">
+              00
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="text">
+              00
+            </div>
+          </div>
+        </div>
+        <div ref="secondRef" class="flipper">
+          <div class="gear" />
+          <div class="gear" />
+          <div class="top">
+            <div class="text">
+              00
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="text">
+              00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </WidgetWrapper>
+</template>
 
 <style lang="scss">
 @font-face {
@@ -220,7 +231,6 @@ $gear-height: calc(100vh / 5);
   border-bottom: 2px solid #000;
   /*   transition: all 1s ease-in-out; */
 }
-
 
 .top {
   /*   border: 1px solid #c00; */

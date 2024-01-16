@@ -1,4 +1,4 @@
-import {createRouter, createWebHashHistory} from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import WidgetRouter from '@/widgets/widget-router'
 
 /**
@@ -12,7 +12,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  //@ts-ignore
-  routes
+  // @ts-expect-error
+  routes,
 })
 export default router

@@ -1,11 +1,11 @@
-import ClockWidgetDefine from "@/widgets/clock/ClockWidget.widget";
+import ClockWidgetDefine from '@/widgets/clock/ClockWidget.widget'
 
 const ClockWidgetRoutes = [
   {
     path: ClockWidgetDefine.path,
     name: `${ClockWidgetDefine.name}`,
     component: () =>
-      import(/* webpackChunkName: "cn.widgetjs.widgets.clock" */ './ClockWidgetView.vue')
+      import(/* webpackChunkName: "cn.widgetjs.widgets.clock" */ './ClockWidgetView.vue'),
   },
   {
     path: ClockWidgetDefine.configPagePath,
@@ -13,8 +13,7 @@ const ClockWidgetRoutes = [
     component: () =>
       import(
         /* webpackChunkName: "cn.widgetjs.widgets.clock.config" */ './ClockWidgetConfigView.vue'
-      )
-  }
+      ),
+  },
 ]
 export default ClockWidgetRoutes
-

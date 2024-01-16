@@ -12,7 +12,7 @@ export default new WidgetPackage({
   author: 'Neo Fu',
   homepage: 'https://widgetjs.cn',
   description: {
-    'zh-CN': '时钟组件'
+    'zh-CN': '时钟组件',
   },
   entry: 'index.html',
   title: { 'zh-CN': '时钟组件合辑' },
@@ -21,8 +21,8 @@ export default new WidgetPackage({
   devOptions: {
     folder: './src/widgets/',
     route: true,
-    devUrl: 'http://localhost:5173/clock'
+    devUrl: 'http://localhost:5173/clock',
   },
   widgets: [],
-  permissions: []
+  permissions: [],
 })

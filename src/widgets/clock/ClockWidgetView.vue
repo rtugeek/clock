@@ -1,76 +1,83 @@
+<script lang="ts" setup>
+import { computed, ref } from 'vue'
+import { useInterval, useWindowSize } from '@vueuse/core'
+import dayjs from 'dayjs'
+import { useWidget } from '@widget-js/vue3'
+import { WidgetData } from '@widget-js/core'
+
+const secondDeg = ref(0)
+const hourDeg = ref(0)
+const minuteDeg = ref(0)
+const firstShot = ref(true)
+
+const { widgetData } = useWidget(WidgetData)
+
+function calAddDeg(current: number, max: number, previousDeg: number, deg: number) {
+  if (current == 0) { current = max }
+  const previous = previousDeg / deg
+  if (previous == current) { return 0 }
+  const addDeg = (current - previous % max) * deg
+  return addDeg % 360
+}
+
+function getHour() {
+  const hour = dayjs().hour()
+  return hour > 12 ? hour - 12 : hour
+}
+
+function updateTime() {
+  const now = dayjs()
+  const second = now.second()
+  const minute = now.minute()
+  secondDeg.value = secondDeg.value + calAddDeg(second, 60, secondDeg.value, 6)
+  minuteDeg.value = (minute / 60 * 360)
+  hourDeg.value = (getHour() / 12 * 360)
+}
+
+useInterval(1000, {
+  callback: (counter) => {
+    updateTime()
+  },
+})
+
+const windowSize = useWindowSize()
+const fillClass = computed(() => {
+  if (windowSize.width.value > windowSize.height.value) {
+    return { 'fill-height': true, 'fill-width': false }
+  }
+  return { 'fill-height': false, 'fill-width': true }
+})
+</script>
+
 <template>
   <widget-wrapper>
-    <div ref="container" class="clock-container" :style="{
-          backgroundColor:widgetData.backgroundColor,
-       }">
-      <div :class="{circles:true,...fillClass}">
-        <div :class="{center:true,'white-bg':true,}"/>
+    <div
+      ref="container" class="clock-container" :style="{
+        backgroundColor: widgetData.backgroundColor,
+      }"
+    >
+      <div class="circles" :class="{ ...fillClass }">
+        <div class="center white-bg" />
         <img class="center" src="./images/clock_bg.png" alt="">
-        <img ref="hour" class="center hour tick" :style="{
-      transform:  'rotate('+ hourDeg +'deg)',
-    }" src="./images/clock_hand_hour.png" alt="">
-        <img ref="minute" class="center minute tick" :style="{
-      transform:  'rotate('+ minuteDeg +'deg)',
-    }" src="./images/clock_hand_minute.png" alt="">
-        <img ref="startSecondDeg" class="center second" :style="{
-      transform: 'rotate('+ secondDeg +'deg)',
-    }" src="./images/clock_hand_second.png" alt="">
+        <img
+          ref="hour" class="center hour tick" :style="{
+            transform: `rotate(${hourDeg}deg)`,
+          }" src="./images/clock_hand_hour.png" alt=""
+        >
+        <img
+          ref="minute" class="center minute tick" :style="{
+            transform: `rotate(${minuteDeg}deg)`,
+          }" src="./images/clock_hand_minute.png" alt=""
+        >
+        <img
+          ref="startSecondDeg" class="center second" :style="{
+            transform: `rotate(${secondDeg}deg)`,
+          }" src="./images/clock_hand_second.png" alt=""
+        >
       </div>
     </div>
   </widget-wrapper>
 </template>
-
-<script lang="ts" setup>
-import { computed, nextTick, ref } from 'vue'
-import { useInterval, useWindowSize } from '@vueuse/core'
-import dayjs from "dayjs";
-import { useWidget } from '@widget-js/vue3'
-import { WidgetData } from '@widget-js/core'
-const secondDeg = ref(0);
-const hourDeg = ref(0);
-const minuteDeg = ref(0);
-const firstShot = ref(true);
-
-const {widgetData} = useWidget(WidgetData)
-
-const calAddDeg = (current: number, max: number, previousDeg: number, deg: number) => {
-  if (current == 0) current = max;
-  const previous = previousDeg / deg;
-  if (previous == current) return 0;
-  let addDeg = (current - previous % max) * deg;
-  return addDeg % 360;
-}
-
-const getHour = () => {
-  const hour = dayjs().hour();
-  return hour > 12 ? hour - 12 : hour;
-}
-
-const updateTime = () => {
-  const now = dayjs();
-  const second = now.second();
-  const minute = now.minute();
-  secondDeg.value = secondDeg.value + calAddDeg(second, 60, secondDeg.value, 6);
-  minuteDeg.value = (minute / 60 * 360);
-  hourDeg.value = (getHour() / 12 * 360);
-}
-
-useInterval(1000, {
-    callback: (counter) => {
-      updateTime();
-    }
-  }
-)
-
-
-const windowSize = useWindowSize()
-const fillClass = computed(()=>{
-  if (windowSize.width.value > windowSize.height.value) {
-    return {"fill-height": true, "fill-width": false}
-  }
-  return {"fill-height": false, "fill-width": true}
-})
-</script>
 
 <style lang="scss" scoped>
 //背景设置为透明，并隐藏滚动条
@@ -131,6 +138,4 @@ body * {
   }
 
 }
-
-
 </style>
