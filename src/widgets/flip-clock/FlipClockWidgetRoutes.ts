@@ -1,9 +1,10 @@
+import type { RouteRecordRaw } from 'vue-router'
 import FlipClockWidgetDefine from './FlipClock.widget'
 
 const path = FlipClockWidgetDefine.path
 const name = FlipClockWidgetDefine.name
 
-const FlipClockWidgetRoutes = [
+const FlipClockWidgetRoutes: RouteRecordRaw[] = [
   {
     path,
     name: `${name}`,

@@ -17,6 +17,6 @@ const GlitchWidgetDefine = new Widget({
   minHeight: 2,
   maxHeight: 2,
   previewImage: '/images/preview_glitch_clock.png',
-  path: '/widget/glitch',
+  path: '/widget/glitch'
 })
 export default GlitchWidgetDefine

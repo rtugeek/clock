@@ -54,15 +54,6 @@ pnpm install
 pnpm dev
 ```
 
-### 创建自己的组件
-
-```shell
-// 安装组件脚手架
-pnpm install -g @widget-js/cli
-// 在项目根目录运行 创建组件命令
-widget create
-```
-
 ### 组件列表
 
 #### 翻页时钟(src/widgets/flip-clock)
@@ -76,3 +67,6 @@ widget create
 #### 时钟(src/widgets/glitch)
 
 ![png](./public/images/preview_clock.png)
+#### 米奇时钟(src/widgets/mickey_clock)
+
+![png](./public/images/preview_micky_clock.png)

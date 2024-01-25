@@ -9,6 +9,9 @@
       ]
     }
   },
+  "types": [
+    "@widget-js/vue3/global"
+  ],
   "include": [
     "env.d.ts",
     "src/**/*",
