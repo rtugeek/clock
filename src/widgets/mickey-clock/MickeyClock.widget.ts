@@ -8,7 +8,7 @@ const name = 'cn.widgetjs.widgets.clock.mickey_clock'
 // 组件标题
 const title = { 'zh-CN': '米奇表盘' }
 // 组件描述
-const description = { 'zh-CN': 'Apple Watch米奇表盘' }
+const description = { 'zh-CN': '复古米老鼠表盘' }
 // 组件关键词
 const keywords = [WidgetKeyword.RECOMMEND]
 // 组件路由地址
