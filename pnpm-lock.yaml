@@ -9,11 +9,11 @@ dependencies:
     specifier: ^10.5.0
     version: 10.5.0(vue@3.3.5)
   '@widget-js/core':
-    specifier: ^0.11.20
-    version: 0.11.20
+    specifier: ^24.1.1-beta.3
+    version: 24.1.1-beta.3
   '@widget-js/vue3':
-    specifier: ^0.11.20
-    version: 0.11.20(vue@3.3.5)
+    specifier: ^24.1.1-beta.3
+    version: 24.1.1-beta.3(vue@3.3.5)
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^0.4.0
     version: 0.4.0
   '@widget-js/vite-plugin-widget':
-    specifier: ^1.2.8
-    version: 1.2.8(@types/node@18.18.6)(sass@1.69.4)
+    specifier: ^24.1.1-beta.3
+    version: 24.1.1-beta.3(@types/node@18.18.6)(sass@1.69.4)
   eslint:
     specifier: 8.48.0
     version: 8.48.0
@@ -549,6 +549,15 @@ packages:
   /@humanwhocodes/object-schema@2.0.0:
     resolution: {integrity: sha512-9S9QrXY2K0L4AGDcSgTi9vgiCcG8VcBv4Mp7/1hDPYoswIy6Z6KO5blYto82BT8M0MZNRWmCFLpCs3HlpYGGdw==}
     dev: true
+
+  /@icon-park/vue-next@1.4.2(vue@3.3.5):
+    resolution: {integrity: sha512-+QklF255wkfBOabY+xw6FAI0Bwln/RhdwCunNy/9sKdKuChtaU67QZqU67KGAvZUTeeBgsL+yaHHxqfQeGZXEQ==}
+    engines: {node: '>= 8.0.0', npm: '>= 5.0.0'}
+    peerDependencies:
+      vue: 3.x
+    dependencies:
+      vue: 3.3.5(typescript@5.2.2)
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1309,38 +1318,30 @@ packages:
       - vue
     dev: false
 
-  /@widget-js/core@0.10.21:
-    resolution: {integrity: sha512-KAg3TycJQa0dOhrZnykTfeD3gGuREyGd9OIpUVmxW6V1DD1FVUvTRDo6BIRdQSbkyoajlncEUvZQUxl997jYjg==}
-    dependencies:
-      change-case: 4.1.2
-      localforage: 1.10.0
-      path-normalize: 6.0.12
-    dev: true
-
-  /@widget-js/core@0.11.20:
-    resolution: {integrity: sha512-JODUjA/bt51qYcxnidaBD5e/N5un/7c6rsiAYeLuoAtzk7lFLsA0xVA/2gcERt75ywH+SZEQN9VZZq7pTt75fQ==}
+  /@widget-js/core@24.1.1-beta.3:
+    resolution: {integrity: sha512-tmv13IpZ4/9K6Rf2/l13I8lrgkxagVHKJdz+FvNGRSxtCeAy/GxZxmYYzHzuCM6q/uFFKXoFYGjoBrqpUCqIBg==}
     dependencies:
       localforage: 1.10.0
       lodash: 4.17.21
       path-normalize: 6.0.12
-    dev: false
 
-  /@widget-js/utils@0.10.21:
-    resolution: {integrity: sha512-S3TIYuSu82Tb8SXfZLk76R2aJ0BUXetJZEs3o8b8uo4uepupCzozp4d4unB7m3W0Ug9a34+W692bdUgaYIUK4g==}
+  /@widget-js/utils@24.1.1-beta.3:
+    resolution: {integrity: sha512-igLKKNgWxpdTrwqZ8MoMJ2kicz8bGUjrtXIREmidIPQ036SONkskvgHffq7KOX6n7ahw/HzJYEFLSSsMnIELzg==}
     dependencies:
-      '@widget-js/core': 0.10.21
+      '@widget-js/core': 24.1.1-beta.3
       consola: 2.15.3
       glob: 10.3.10
       typescript: 5.2.2
     dev: true
 
-  /@widget-js/vite-plugin-widget@1.2.8(@types/node@18.18.6)(sass@1.69.4):
-    resolution: {integrity: sha512-5rdGGTlnBThMOvLB8at4SP9YxQL2SJLAV4SfNFe5EZr0fWCb+eFMYfsyXMq7faXSscyQGH/tPBJVfbNS/NJQ2Q==}
+  /@widget-js/vite-plugin-widget@24.1.1-beta.3(@types/node@18.18.6)(sass@1.69.4):
+    resolution: {integrity: sha512-qAZEJGuvT6Muc3u9ob/RmeOrErr/tHPceEAkowiPBNikUEhtvXSlq1n8/Kn2tgDGnec9zQSipsteVrKiyphQzw==}
     dependencies:
-      '@widget-js/core': 0.10.21
-      '@widget-js/utils': 0.10.21
+      '@widget-js/core': 24.1.1-beta.3
+      '@widget-js/utils': 24.1.1-beta.3
       consola: 2.15.3
       glob: 10.3.10
+      lodash: 4.17.21
       typescript: 5.2.2
       vite: 5.0.10(@types/node@18.18.6)(sass@1.69.4)
       ws: 8.14.2
@@ -1356,13 +1357,14 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@widget-js/vue3@0.11.20(vue@3.3.5):
-    resolution: {integrity: sha512-j05i1FNa2LIjwdGNy0t0MubhLPkapreq0eKVc+P9omPiODbkJgWgJF4ozUIFqXkv7vGcCKznlH5n+1Oy4qddrA==}
+  /@widget-js/vue3@24.1.1-beta.3(vue@3.3.5):
+    resolution: {integrity: sha512-JUb6j0cZ4v/GllcLqbzUTif2YfkzUDOhDz1S1dNEzXlMkonB/WVewbz6ub9QKk5riZZxpUZCsc/ta2B6cdiuEw==}
     dependencies:
+      '@icon-park/vue-next': 1.4.2(vue@3.3.5)
       '@vueuse/core': 9.13.0(vue@3.3.5)
       '@vueuse/integrations': 9.13.0(change-case@5.3.0)(vue@3.3.5)
       '@vueuse/shared': 10.5.0(vue@3.3.5)
-      '@widget-js/core': 0.11.20
+      '@widget-js/core': 24.1.1-beta.3
       change-case: 5.3.0
       element-plus: 2.4.1(vue@3.3.5)
       vue-demi: 0.14.6(vue@3.3.5)
@@ -1572,23 +1574,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /camel-case@4.1.2:
-    resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
-    dependencies:
-      pascal-case: 3.1.2
-      tslib: 2.6.2
-    dev: true
-
   /caniuse-lite@1.0.30001572:
     resolution: {integrity: sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==}
-    dev: true
-
-  /capital-case@1.0.4:
-    resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.6.2
-      upper-case-first: 2.0.2
     dev: true
 
   /chai@4.3.10:
@@ -1624,23 +1611,6 @@ packages:
   /chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-    dev: true
-
-  /change-case@4.1.2:
-    resolution: {integrity: sha512-bSxY2ws9OtviILG1EiY5K7NNxkqg/JnRnFxLtKQ96JaviiIxi7djMrSd0ECT9AC+lttClmYwKw53BWpOMblo7A==}
-    dependencies:
-      camel-case: 4.1.2
-      capital-case: 1.0.4
-      constant-case: 3.0.4
-      dot-case: 3.0.4
-      header-case: 2.0.4
-      no-case: 3.0.4
-      param-case: 3.0.4
-      pascal-case: 3.1.2
-      path-case: 3.0.4
-      sentence-case: 3.0.4
-      snake-case: 3.0.4
-      tslib: 2.6.2
     dev: true
 
   /change-case@5.3.0:
@@ -1778,14 +1748,6 @@ packages:
     resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
     dev: true
 
-  /constant-case@3.0.4:
-    resolution: {integrity: sha512-I2hSBi7Vvs7BEuJDr5dDHfzb/Ruj3FyvFyh7KLilAjNQw3Be+xgqUBA2W6scVEcL0hL1dwPRtIqEPVUCKkSsyQ==}
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.6.2
-      upper-case: 2.0.2
-    dev: true
-
   /core-js-compat@3.35.0:
     resolution: {integrity: sha512-5blwFAddknKeNgsjBzilkdQ0+YK8L1PfqPYq40NOYMYFSS38qj+hpTcLLWwpIwA2A5bje/x5jmVn2tzUMg9IVw==}
     dependencies:
@@ -1901,13 +1863,6 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       webidl-conversions: 7.0.0
-    dev: true
-
-  /dot-case@3.0.4:
-    resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.6.2
     dev: true
 
   /eastasianwidth@0.2.0:
@@ -2701,13 +2656,6 @@ packages:
     hasBin: true
     dev: true
 
-  /header-case@2.0.4:
-    resolution: {integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==}
-    dependencies:
-      capital-case: 1.0.4
-      tslib: 2.6.2
-    dev: true
-
   /hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
@@ -3160,12 +3108,6 @@ packages:
       get-func-name: 2.0.2
     dev: true
 
-  /lower-case@2.0.2:
-    resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
-    dependencies:
-      tslib: 2.6.2
-    dev: true
-
   /lru-cache@10.0.1:
     resolution: {integrity: sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==}
     engines: {node: 14 || >=16.14}
@@ -3330,13 +3272,6 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /no-case@3.0.4:
-    resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
-    dependencies:
-      lower-case: 2.0.2
-      tslib: 2.6.2
-    dev: true
-
   /node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: true
@@ -3480,13 +3415,6 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /param-case@3.0.4:
-    resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.6.2
-    dev: true
-
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -3535,20 +3463,6 @@ packages:
     resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==}
     dependencies:
       entities: 4.5.0
-    dev: true
-
-  /pascal-case@3.1.2:
-    resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.6.2
-    dev: true
-
-  /path-case@3.0.4:
-    resolution: {integrity: sha512-qO4qCFjXqVTrcbPt/hQfhTQ+VhFsqNKOPtytgNKkKxSoEp3XPUQ8ObFuePylOIok5gjn69ry8XiULxCwot3Wfg==}
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.6.2
     dev: true
 
   /path-exists@4.0.0:
@@ -3869,14 +3783,6 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /sentence-case@3.0.4:
-    resolution: {integrity: sha512-8LS0JInaQMCRoQ7YUytAo/xUu5W2XnQxV2HI/6uM6U7CITS1RqPElr30V6uIqyMKM9lJGRVFy5/4CuzcixNYSg==}
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.6.2
-      upper-case-first: 2.0.2
-    dev: true
-
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -3945,13 +3851,6 @@ packages:
     dependencies:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.0.0
-    dev: true
-
-  /snake-case@3.0.4:
-    resolution: {integrity: sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg==}
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.6.2
     dev: true
 
   /source-map-js@1.0.2:
@@ -4149,10 +4048,6 @@ packages:
       typescript: 5.2.2
     dev: true
 
-  /tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
-
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
@@ -4219,18 +4114,6 @@ packages:
       browserslist: 4.22.2
       escalade: 3.1.1
       picocolors: 1.0.0
-    dev: true
-
-  /upper-case-first@2.0.2:
-    resolution: {integrity: sha512-514ppYHBaKwfJRK/pNC6c/OxfGa0obSnAl106u97Ed0I625Nin96KAjttZF6ZL3e1XLtphxnqrOi9iWgm+u+bg==}
-    dependencies:
-      tslib: 2.6.2
-    dev: true
-
-  /upper-case@2.0.2:
-    resolution: {integrity: sha512-KgdgDGJt2TpuwBUIjgG6lzw2GWFRCW9Qkfkiv0DxqHHLYJHmtmdUIKcZd8rHgFSjopVTlw6ggzCm1b8MFQwikg==}
-    dependencies:
-      tslib: 2.6.2
     dev: true
 
   /uri-js@4.4.1:

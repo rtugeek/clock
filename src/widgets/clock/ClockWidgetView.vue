@@ -37,7 +37,7 @@ function updateTime() {
   const minute = now.minute()
   secondDeg.value = secondDeg.value + calAddDeg(second, 60, secondDeg.value, 6)
   minuteDeg.value = (minute / 60 * 360)
-  hourDeg.value = (getHour() / 12 * 360)
+  hourDeg.value = (getHour() / 12 * 360) + (minute / 60 * 30)
 }
 
 useInterval(1000, {

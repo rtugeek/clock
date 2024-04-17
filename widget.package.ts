@@ -16,7 +16,7 @@ export default new WidgetPackage({
   },
   entry: 'index.html',
   title: { 'zh-CN': '时钟组件合辑' },
-  version: '0.0.1',
+  version: '0.0.2',
   hash: true,
   devOptions: {
     folder: './src/widgets/',

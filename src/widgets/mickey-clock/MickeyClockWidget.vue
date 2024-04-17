@@ -1,5 +1,4 @@
 <script lang='ts'>
-
 export default {
   name: 'MickeyClockWidget',
   props: {
@@ -28,7 +27,7 @@ export default {
         if (this.hours > 12) {
           this.hours = this.hours - 12
         }
-        this.hoursRotate = `rotate(${this.hours * 30}deg)`
+        this.hoursRotate = `rotate(${this.hours * 30 + this.minutes / 2}deg)`
         this.minutesRotate = `rotate(${this.minutes * 6}deg)`
       }, 1000)
     }
@@ -37,48 +36,48 @@ export default {
 </script>
 
 <template>
-  <div class='mickey-clock'>
-    <div class='bg' :style='{ borderRadius: `${borderRadius ?? 22}px` }' />
-    <div id='watch'>
-      <div class='digit'>
+  <div class="mickey-clock">
+    <div class="bg" :style="{ borderRadius: `${borderRadius ?? 22}px` }" />
+    <div id="watch">
+      <div class="digit">
         <span>1</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>2</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>3</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>4</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>5</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>6</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>7</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>8</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>9</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>10</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>11</span>
       </div>
-      <div class='digit'>
+      <div class="digit">
         <span>12</span>
       </div>
-      <div id='mickey' />
-      <div id='hours' class='right' :style='{ transform: hoursRotate }' />
-      <div id='minutes' class='back left' :style='{ transform: minutesRotate }' />
+      <div id="mickey" />
+      <div id="hours" class="right" :style="{ transform: hoursRotate }" />
+      <div id="minutes" class="back left" :style="{ transform: minutesRotate }" />
     </div>
   </div>
 </template>
