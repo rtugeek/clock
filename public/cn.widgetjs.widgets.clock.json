@@ -1,6 +1,6 @@
 {
   "name": "cn.widgetjs.widgets.clock",
-  "version": "0.0.2",
+  "version": "0.5.2",
   "author": "Neo Fu",
   "homepage": "https://widgetjs.cn",
   "title": {
@@ -10,12 +10,13 @@
     "zh-CN": "时钟组件"
   },
   "entry": "index.html",
-  "remoteEntry": "https://rtugeek.gitee.io/clock",
-  "remotePackage": "https://rtugeek.gitee.io/clock/widget.json",
+  "remoteEntry": "https://widgetjs.cn/clock",
+  "remotePackage": "https://widgetjs.cn/clock/widget.json",
   "remote": {
-    "entry": "https://rtugeek.gitee.io/clock",
+    "entry": "https://widgetjs.cn/clock",
     "hash": true,
-    "base": "/clock"
+    "base": "/clock",
+    "hostname": "widgetjs.cn"
   },
   "hash": true,
   "url": "",
