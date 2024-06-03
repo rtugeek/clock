@@ -15,6 +15,7 @@ const ClockWidgetDefine = new Widget({
   description,
   keywords,
   backgroundThrottling: false,
+  categories: ['productivity'],
   lang: 'zh-CN',
   width: 2,
   height: 2,

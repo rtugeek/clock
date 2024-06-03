@@ -19,6 +19,7 @@ const MickeyClockWidgetDefine = new Widget({
   title,
   description,
   keywords,
+  categories: ['time'],
   lang: 'zh-CN',
   width: 2,
   height: 2,

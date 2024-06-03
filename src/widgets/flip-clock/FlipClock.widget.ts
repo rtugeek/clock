@@ -17,6 +17,7 @@ const FlipClockWidgetDefine = new Widget({
   minWidth: 4,
   maxWidth: 4,
   minHeight: 2,
+  categories: ['time'],
   maxHeight: 2,
   previewImage: '/images/preview_flip_clock.png',
   path: '/widget/flip_clock',

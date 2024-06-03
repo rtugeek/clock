@@ -13,6 +13,7 @@ const GlitchWidgetDefine = new Widget({
   width: 4,
   height: 2,
   minWidth: 4,
+  categories: ['time'],
   maxWidth: 4,
   minHeight: 2,
   maxHeight: 2,
