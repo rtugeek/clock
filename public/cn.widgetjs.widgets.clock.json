@@ -152,7 +152,7 @@
       "backgroundThrottling": false,
       "previewImage": "/images/preview_clock.png",
       "categories": [
-        "productivity"
+        "time"
       ],
       "supportDeployMode": 17,
       "configPagePath": "/widget/config/clock",

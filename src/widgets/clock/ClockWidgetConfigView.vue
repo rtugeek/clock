@@ -23,11 +23,11 @@ const widgetConfigOption = new WidgetConfigOption({
 
 <template>
   <WidgetEditDialog
-    v-model='widgetData'
-    :widget-params='widgetParams'
-    :option='widgetConfigOption'
-    @apply='save'
-    @confirm='save({ closeWindow: true })'
+    v-model="widgetData"
+    :widget-params="widgetParams"
+    :option="widgetConfigOption"
+    @apply="save"
+    @confirm="save({ closeWindow: true })"
   />
 </template>
 
