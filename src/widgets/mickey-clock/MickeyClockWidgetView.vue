@@ -5,9 +5,7 @@ import MickeyClockWidget from './MickeyClockWidget.vue'
 
 <template>
   <WidgetWrapper>
-    <MickeyClockWidget
-      :border-radius="22"
-    />
+    <MickeyClockWidget />
   </WidgetWrapper>
 </template>
 

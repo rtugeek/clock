@@ -1,12 +1,6 @@
 <script lang='ts'>
 export default {
   name: 'MickeyClockWidget',
-  props: {
-    borderRadius: {
-      type: Number,
-      default: 22
-    }
-  },
   data() {
     return {
       hours: 0,
@@ -37,7 +31,7 @@ export default {
 
 <template>
   <div class="mickey-clock">
-    <div class="bg" :style="{ borderRadius: `${borderRadius ?? 22}px` }" />
+    <div class="bg" />
     <div id="watch">
       <div class="digit">
         <span>1</span>
@@ -88,6 +82,7 @@ export default {
   left: 0;
   top: 0;
   height: 100%;
+  border-radius: var(--widget-border-radius);
   background: #000;
 }
 

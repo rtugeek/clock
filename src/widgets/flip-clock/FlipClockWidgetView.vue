@@ -165,7 +165,7 @@ html *::after {
   width: 100%;
   align-items: center;
   justify-content: center;
-  border-radius: 22px;
+  border-radius: var(--widget-border-radius);
   color: #fff;
 }
 
@@ -177,7 +177,7 @@ html *::after {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 12px;
   /*   background: rgb(26, 25, 28); */
-  border-radius: 22px;
+  border-radius: var(--widget-border-radius);
   /*   background-repeat: no-repeat; */
   background-image: linear-gradient(rgb(14, 14, 15) 0%, rgb(26, 25, 28) 20%, rgb(44, 44, 52) 50%, rgb(20, 20, 27) 100%);
   /*   border-top: 6px solid rgb(56, 56, 61); */

@@ -49,6 +49,9 @@
       "meta": {},
       "backgroundThrottling": true,
       "previewImage": "/images/preview_micky_clock.png",
+      "categories": [
+        "time"
+      ],
       "supportDeployMode": 17,
       "routes": []
     },
@@ -80,6 +83,9 @@
       "meta": {},
       "backgroundThrottling": true,
       "previewImage": "/images/preview_glitch_clock.png",
+      "categories": [
+        "time"
+      ],
       "supportDeployMode": 17,
       "routes": []
     },
@@ -111,6 +117,9 @@
       "meta": {},
       "backgroundThrottling": false,
       "previewImage": "/images/preview_flip_clock.png",
+      "categories": [
+        "time"
+      ],
       "supportDeployMode": 17,
       "routes": []
     },
@@ -142,6 +151,9 @@
       "meta": {},
       "backgroundThrottling": false,
       "previewImage": "/images/preview_clock.png",
+      "categories": [
+        "time"
+      ],
       "supportDeployMode": 17,
       "configPagePath": "/widget/config/clock",
       "routes": []

@@ -111,7 +111,7 @@ a.switcher:before {
   aspect-ratio: 1/0.5;
   text-align: center;
   vertical-align: middle;
-  border-radius: 22px;
+  border-radius: var(--widget-border-radius);
   background-color: #111111;
 }
 
