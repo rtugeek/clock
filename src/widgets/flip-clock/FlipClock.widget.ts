@@ -1,14 +1,10 @@
 import { Widget, WidgetKeyword } from '@widget-js/core'
 
 const name = 'cn.widgetjs.widgets.flip_clock'
-// 组件标题
-const title = { 'zh-CN': '翻页时钟' }
-// 组件描述
-const description = { 'zh-CN': '带有翻页动画的数字时钟' }
 const FlipClockWidgetDefine = new Widget({
   name,
-  title,
-  description,
+  title: { 'zh-CN': '翻页时钟', 'en-US': 'Flip Clock' },
+  description: { 'zh-CN': '带有翻页动画的数字时钟', 'en-US': 'Clock with flip animation' },
   keywords: [WidgetKeyword.RECOMMEND],
   lang: 'zh-CN',
   backgroundThrottling: false,

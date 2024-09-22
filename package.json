@@ -1,7 +1,7 @@
 {
   "name": "clock",
   "type": "module",
-  "version": "0.5.2",
+  "version": "0.6.1",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.5.0",
-    "@widget-js/core": "^24.1.1-beta.9",
-    "@widget-js/vue3": "^24.1.1-beta.9",
+    "@widget-js/core": "^24.1.1-beta.40",
+    "@widget-js/vue3": "^24.1.1-beta.40",
     "dayjs": "^1.11.10",
     "element-plus": "^2.4.1",
     "vue": "^3.3.4",
@@ -36,7 +36,7 @@
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/test-utils": "^2.4.1",
     "@vue/tsconfig": "^0.4.0",
-    "@widget-js/vite-plugin-widget": "^24.1.1-beta.9",
+    "@widget-js/vite-plugin-widget": "^24.1.1-beta.40",
     "eslint": "8.48.0",
     "eslint-plugin-vue": "9.19.2",
     "jsdom": "^22.1.0",

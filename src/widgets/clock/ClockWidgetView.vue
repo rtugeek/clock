@@ -93,12 +93,11 @@ body * {
 
 .clock-container {
   overflow: hidden;
-  height: 100%;
   position: relative;
-  width: 100%;
   background-color: var(--widget-background-color);
   border-radius: var(--widget-border-radius, 22px);
-
+  width: 100%;
+  height: 100%;
   img {
     transform: scale(0.9);
     pointer-events: none;

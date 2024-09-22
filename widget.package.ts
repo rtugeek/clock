@@ -14,15 +14,16 @@ export default new WidgetPackage({
   homepage: 'https://widgetjs.cn',
   description: {
     'zh-CN': '时钟组件',
+    'en-US': 'Clock'
   },
   entry: 'index.html',
-  title: { 'zh-CN': '时钟组件合辑' },
+  title: { 'zh-CN': '时钟组件合辑', 'en-US': 'Clock Widgets' },
   hash: true,
   devOptions: {
     folder: './src/widgets/',
     route: true,
-    devUrl: 'http://localhost:5173/clock',
+    devUrl: 'http://localhost:5173/clock'
   },
   widgets: [],
-  permissions: [],
+  permissions: []
 })

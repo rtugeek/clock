@@ -68,6 +68,7 @@ function toggleScreen(e: MouseEvent) {
 <style lang="scss" scoped>
 .glitch_container {
   color: #FFFFFF;
+  height: 100%;
 }
 
 a.switcher {

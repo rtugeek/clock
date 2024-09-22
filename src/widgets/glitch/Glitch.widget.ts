@@ -1,9 +1,9 @@
 import { Widget, WidgetKeyword } from '@widget-js/core'
 
 // 组件标题
-const title = { 'zh-CN': '故障时钟' }
+const title = { 'zh-CN': '故障时钟', 'en-US': 'Glitch Clock' }
 // 组件描述
-const description = { 'zh-CN': 'Glitch' }
+const description = { 'zh-CN': 'Glitch', 'en-US': 'Glitch' }
 const GlitchWidgetDefine = new Widget({
   name: 'cn.widgetjs.widgets.clock.glitch',
   title,

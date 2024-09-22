@@ -1,13 +1,15 @@
 {
   "name": "cn.widgetjs.widgets.clock",
-  "version": "0.5.2",
+  "version": "0.6.1",
   "author": "Neo Fu",
   "homepage": "https://widgetjs.cn",
   "title": {
-    "zh-CN": "时钟组件合辑"
+    "zh-CN": "时钟组件合辑",
+    "en-US": "Clock Widgets"
   },
   "description": {
-    "zh-CN": "时钟组件"
+    "zh-CN": "时钟组件",
+    "en-US": "Clock"
   },
   "entry": "index.html",
   "remoteEntry": "https://widgetjs.cn/clock",
@@ -22,12 +24,51 @@
   "url": "",
   "widgets": [
     {
-      "name": "cn.widgetjs.widgets.clock.mickey_clock",
+      "name": "cn.widgetjs.widgets.clock.trump_clock",
       "title": {
-        "zh-CN": "米奇表盘"
+        "zh-CN": "川普表盘",
+        "en-US": "Trump Clock"
       },
       "description": {
-        "zh-CN": "复古米老鼠表盘"
+        "zh-CN": "China!",
+        "en-US": "China!"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 2,
+      "height": 2,
+      "maxWidth": 2,
+      "webviewTag": false,
+      "maxHeight": 2,
+      "minWidth": 2,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/trump_clock",
+      "meta": {},
+      "backgroundThrottling": true,
+      "previewImage": "/images/preview_trump.png",
+      "categories": [
+        "fun",
+        "time"
+      ],
+      "supportDeployMode": 17,
+      "routes": []
+    },
+    {
+      "name": "cn.widgetjs.widgets.clock.mickey_clock",
+      "title": {
+        "zh-CN": "米奇表盘",
+        "en-US": "Mickey Clock"
+      },
+      "description": {
+        "zh-CN": "复古米老鼠表盘",
+        "en-US": "Retro Mickey Mouse watch dial"
       },
       "keywords": [
         "recommend"
@@ -58,10 +99,12 @@
     {
       "name": "cn.widgetjs.widgets.clock.glitch",
       "title": {
-        "zh-CN": "故障时钟"
+        "zh-CN": "故障时钟",
+        "en-US": "Glitch Clock"
       },
       "description": {
-        "zh-CN": "Glitch"
+        "zh-CN": "Glitch",
+        "en-US": "Glitch"
       },
       "keywords": [
         "recommend"
@@ -92,10 +135,12 @@
     {
       "name": "cn.widgetjs.widgets.flip_clock",
       "title": {
-        "zh-CN": "翻页时钟"
+        "zh-CN": "翻页时钟",
+        "en-US": "Flip Clock"
       },
       "description": {
-        "zh-CN": "带有翻页动画的数字时钟"
+        "zh-CN": "带有翻页动画的数字时钟",
+        "en-US": "Clock with flip animation"
       },
       "keywords": [
         "recommend"
@@ -126,10 +171,12 @@
     {
       "name": "cn.widgetjs.widgets.clock.default",
       "title": {
-        "zh-CN": "时钟"
+        "zh-CN": "时钟",
+        "en-US": "Clock"
       },
       "description": {
-        "zh-CN": "带动画的时钟"
+        "zh-CN": "带动画的时钟",
+        "en-US": "Clock with animation"
       },
       "keywords": [
         "recommend"

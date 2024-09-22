@@ -133,6 +133,12 @@ onMounted(async () => {
   font-display: swap;
 }
 
+// remove widget's default background mask
+.widget-background-mask{
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
 /*
 font-family: 'Barlow', sans-serif;
 font-family: 'Barlow Condensed', sans-serif;
@@ -161,7 +167,7 @@ html *::after {
 .clock-container {
   margin: 0;
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -182,8 +188,6 @@ html *::after {
   background-image: linear-gradient(rgb(14, 14, 15) 0%, rgb(26, 25, 28) 20%, rgb(44, 44, 52) 50%, rgb(20, 20, 27) 100%);
   /*   border-top: 6px solid rgb(56, 56, 61); */
   /*   border-bottom: 6px solid rgb(59, 59, 65); */
-  box-shadow: inset 0 -3px 6px 3px rgba(0, 0, 0, 0.2), inset 0 4px 8px 3px rgba(0, 0, 0, 0.4),
-  0 2px 3px 1px rgba(255, 255, 255, 0.3), 0 -2px 4px 4px rgba(56, 56, 61, 0.5);
   font-family: 'Saira ExtraCondensed', sans-serif;
 }
 

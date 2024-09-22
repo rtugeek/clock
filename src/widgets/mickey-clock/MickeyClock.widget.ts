@@ -3,21 +3,15 @@ import {
   WidgetKeyword,
 } from '@widget-js/core'
 
-// TODO 修改组件信息，标题，描述，关键词
-const name = 'cn.widgetjs.widgets.clock.mickey_clock'
-// 组件标题
-const title = { 'zh-CN': '米奇表盘' }
-// 组件描述
-const description = { 'zh-CN': '复古米老鼠表盘' }
 // 组件关键词
 const keywords = [WidgetKeyword.RECOMMEND]
 // 组件路由地址
 const url = '/widget/mickey_clock'
 // 组件关键词
 const MickeyClockWidgetDefine = new Widget({
-  name,
-  title,
-  description,
+  name: 'cn.widgetjs.widgets.clock.mickey_clock',
+  title: { 'zh-CN': '米奇表盘', 'en-US': 'Mickey Clock' },
+  description: { 'zh-CN': '复古米老鼠表盘', 'en-US': 'Retro Mickey Mouse watch dial' },
   keywords,
   categories: ['time'],
   lang: 'zh-CN',
