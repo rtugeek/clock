@@ -2,18 +2,12 @@
 import { computed, ref } from 'vue'
 import { useInterval, useWindowSize } from '@vueuse/core'
 import dayjs from 'dayjs'
-import { useWidget } from '@widget-js/vue3'
-import { WidgetData } from '@widget-js/core'
-import ClockWidgetDefine from '@/widgets/clock/ClockWidget.widget'
+import { useWidgetTheme } from '@widget-js/vue3'
 
 const secondDeg = ref(0)
 const hourDeg = ref(0)
 const minuteDeg = ref(0)
-
-const defaultData = new WidgetData(ClockWidgetDefine.name)
-defaultData.theme.backgroundColor = '#000'
-useWidget(WidgetData, { defaultData })
-
+useWidgetTheme()
 function calAddDeg(current: number, max: number, previousDeg: number, deg: number) {
   if (current == 0) {
     current = max
@@ -98,6 +92,7 @@ body * {
   border-radius: var(--widget-border-radius, 22px);
   width: 100%;
   height: 100%;
+
   img {
     transform: scale(0.9);
     pointer-events: none;
@@ -134,7 +129,7 @@ body * {
   }
 
   .white-bg {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     background-position: center;
     border-radius: 50%;
     transform: scale(0.9);
