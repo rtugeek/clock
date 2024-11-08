@@ -4,6 +4,7 @@
 name: Deploy CI
 permissions:
   id-token: write
+  pages: write
 
 on:
   push:
