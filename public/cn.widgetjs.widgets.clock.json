@@ -1,6 +1,6 @@
 {
   "name": "cn.widgetjs.widgets.clock",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "author": "Neo Fu",
   "homepage": "https://widgetjs.cn",
   "title": {
@@ -65,6 +65,41 @@
           "link": "https://github.com/rtugeek/clock"
         }
       ]
+    },
+    {
+      "name": "cn.widgetjs.widgets.clock.text_clock",
+      "title": {
+        "zh-CN": "文本时钟",
+        "en-US": "Text Clock"
+      },
+      "description": {
+        "zh-CN": "简单的文本时钟",
+        "en-US": "Simple Text Clock"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 4,
+      "height": 2,
+      "maxWidth": 4,
+      "webviewTag": false,
+      "maxHeight": 2,
+      "minWidth": 4,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/text_clock",
+      "meta": {},
+      "backgroundThrottling": true,
+      "previewImage": "/images/preview_text_clock.png",
+      "categories": [],
+      "supportDeployMode": 17,
+      "configPagePath": "/widget/config/text_clock?width=600&height=500&frame=true&transparent=false",
+      "routes": []
     },
     {
       "name": "cn.widgetjs.widgets.clock.mickey_clock",
