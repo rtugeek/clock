@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'FiraSansCondensed';
+  src: url('./FiraSansCondensed-Bold.woff2') format('woff2'),
+  url('./FiraSansCondensed-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
