@@ -9,11 +9,11 @@ dependencies:
     specifier: ^10.5.0
     version: 10.5.0(vue@3.3.5)
   '@widget-js/core':
-    specifier: ^24.1.1-beta.40
-    version: 24.1.1-beta.40
+    specifier: ^24.1.1-beta.47
+    version: 24.1.1-beta.47
   '@widget-js/vue3':
-    specifier: ^24.1.1-beta.45
-    version: 24.1.1-beta.45(vue@3.3.5)
+    specifier: ^24.1.1-beta.48
+    version: 24.1.1-beta.48(vue@3.3.5)
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -24,7 +24,7 @@ dependencies:
     specifier: ^3.3.4
     version: 3.3.5(typescript@5.2.2)
   vue-i18n:
-    specifier: '10'
+    specifier: 10.0.4
     version: 10.0.4(vue@3.3.5)
   vue-router:
     specifier: ^4.2.5
@@ -603,8 +603,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 10.0.0
-      '@intlify/shared': 10.0.0
+      '@intlify/message-compiler': 11.0.0-rc.1
+      '@intlify/shared': 11.0.0-rc.1
       acorn: 8.11.3
       escodegen: 2.1.0
       estree-walker: 2.0.2
@@ -622,14 +622,6 @@ packages:
       '@intlify/message-compiler': 10.0.4
       '@intlify/shared': 10.0.4
 
-  /@intlify/message-compiler@10.0.0:
-    resolution: {integrity: sha512-OcaWc63NC/9p1cMdgoNKBj4d61BH8sUW1Hfs6YijTd9656ZR4rNqXAlRnBrfS5ABq0vjQjpa8VnyvH9hK49yBw==}
-    engines: {node: '>= 16'}
-    dependencies:
-      '@intlify/shared': 10.0.0
-      source-map-js: 1.0.2
-    dev: true
-
   /@intlify/message-compiler@10.0.4:
     resolution: {integrity: sha512-AFbhEo10DP095/45EauinQJ5hJ3rJUmuuqltGguvc3WsvezZN+g8qNHLGWKu60FHQVizMrQY7VJ+zVlBXlQQkQ==}
     engines: {node: '>= 16'}
@@ -637,14 +629,22 @@ packages:
       '@intlify/shared': 10.0.4
       source-map-js: 1.0.2
 
-  /@intlify/shared@10.0.0:
-    resolution: {integrity: sha512-6ngLfI7DOTew2dcF9WMJx+NnMWghMBhIiHbGg+wRvngpzD5KZJZiJVuzMsUQE1a5YebEmtpTEfUrDp/NqVGdiw==}
+  /@intlify/message-compiler@11.0.0-rc.1:
+    resolution: {integrity: sha512-TGw2uBfuTFTegZf/BHtUQBEKxl7Q/dVGLoqRIdw8lFsp9g/53sYn5iD+0HxIzdYjbWL6BTJMXCPUHp9PxDTRPw==}
     engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/shared': 11.0.0-rc.1
+      source-map-js: 1.0.2
     dev: true
 
   /@intlify/shared@10.0.4:
     resolution: {integrity: sha512-ukFn0I01HsSgr3VYhYcvkTCLS7rGa0gw4A4AMpcy/A9xx/zRJy7PS2BElMXLwUazVFMAr5zuiTk3MQeoeGXaJg==}
     engines: {node: '>= 16'}
+
+  /@intlify/shared@11.0.0-rc.1:
+    resolution: {integrity: sha512-8tR1xe7ZEbkabTuE/tNhzpolygUn9OaYp9yuYAF4MgDNZg06C3Qny80bes2/e9/Wm3aVkPUlCw6WgU7mQd0yEg==}
+    engines: {node: '>= 16'}
+    dev: true
 
   /@intlify/unplugin-vue-i18n@5.2.0(eslint@8.48.0)(typescript@5.2.2)(vue-i18n@10.0.4)(vue@3.3.5):
     resolution: {integrity: sha512-pmRiPY2Nj9mmSrixT69aO45XxGUr5fDBy/IIw4ajLlDTJm5TSmQKA5YNdsH0uxVDCPWy5tlQrF18hkDwI7UJvg==}
@@ -661,8 +661,8 @@ packages:
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.48.0)
       '@intlify/bundle-utils': 9.0.0(vue-i18n@10.0.4)
-      '@intlify/shared': 10.0.0
-      '@intlify/vue-i18n-extensions': 7.0.0(@intlify/shared@10.0.0)(vue-i18n@10.0.4)(vue@3.3.5)
+      '@intlify/shared': 11.0.0-rc.1
+      '@intlify/vue-i18n-extensions': 7.0.0(@intlify/shared@11.0.0-rc.1)(vue-i18n@10.0.4)(vue@3.3.5)
       '@rollup/pluginutils': 5.1.3
       '@typescript-eslint/scope-manager': 7.18.0
       '@typescript-eslint/typescript-estree': 7.18.0(typescript@5.2.2)
@@ -685,7 +685,7 @@ packages:
       - webpack-sources
     dev: true
 
-  /@intlify/vue-i18n-extensions@7.0.0(@intlify/shared@10.0.0)(vue-i18n@10.0.4)(vue@3.3.5):
+  /@intlify/vue-i18n-extensions@7.0.0(@intlify/shared@11.0.0-rc.1)(vue-i18n@10.0.4)(vue@3.3.5):
     resolution: {integrity: sha512-MtvfJnb4aklpCU5Q/dkWkBT/vGsp3qERiPIwtTq5lX4PCLHtUprAJZp8wQj5ZcwDaFCU7+yVMjYbeXpIf927cA==}
     engines: {node: '>= 18'}
     peerDependencies:
@@ -704,7 +704,7 @@ packages:
         optional: true
     dependencies:
       '@babel/parser': 7.26.2
-      '@intlify/shared': 10.0.0
+      '@intlify/shared': 11.0.0-rc.1
       vue: 3.3.5(typescript@5.2.2)
       vue-i18n: 10.0.4(vue@3.3.5)
     dev: true
@@ -1548,9 +1548,20 @@ packages:
       localforage: 1.10.0
       lodash: 4.17.21
       path-normalize: 6.0.12
+    dev: true
 
-  /@widget-js/core@24.1.1-beta.42:
-    resolution: {integrity: sha512-AD3o1Xhe5N/OU32gZN15Cksbmr330s25Un3ZfLpjbVAT/CHVa/MB1I2Xyacxr6thDrgScE3LqsTt62eLc/ADzQ==}
+  /@widget-js/core@24.1.1-beta.44:
+    resolution: {integrity: sha512-hsdS48bao2gebvyMfFagXoo3WO2VIZ3D6GeAUgR9zVgCTr5TufiJiPfnpSvBctgoOwCJ3vL77uBkT2NAPN6jAQ==}
+    dependencies:
+      '@types/css-tree': 2.3.8
+      css-tree: 2.3.1
+      localforage: 1.10.0
+      lodash: 4.17.21
+      path-normalize: 6.0.12
+    dev: false
+
+  /@widget-js/core@24.1.1-beta.47:
+    resolution: {integrity: sha512-SpsyX9dCrA4IfwGyE3O4pa5jGwRojq0QcBSfbzpt2zGoxGJ8ZDZa9eaW4BBqkt3Gb9+SCXm7Puhwn4alknLfvQ==}
     dependencies:
       '@types/css-tree': 2.3.8
       css-tree: 2.3.1
@@ -1591,14 +1602,14 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@widget-js/vue3@24.1.1-beta.45(vue@3.3.5):
-    resolution: {integrity: sha512-7BC+G/vz3dvzVhA+7B9/yIdN93jHAWCm9pJUoOWsMvqRDBRAQ0T/z3js0oZqao+1Hj2NJmuPE7QssQnGWgIocg==}
+  /@widget-js/vue3@24.1.1-beta.48(vue@3.3.5):
+    resolution: {integrity: sha512-1UZ20h9MnGvQ1jA3C6UbRokZ5piJJJI0DuhfjP88qDZdG5xM7gTv/QuxS+l9GdTzUaPxHZAPrizrFTrrxlpqoA==}
     dependencies:
       '@icon-park/vue-next': 1.4.2(vue@3.3.5)
       '@vueuse/core': 9.13.0(vue@3.3.5)
       '@vueuse/integrations': 9.13.0(change-case@5.3.0)(vue@3.3.5)
       '@vueuse/shared': 10.11.1(vue@3.3.5)
-      '@widget-js/core': 24.1.1-beta.42
+      '@widget-js/core': 24.1.1-beta.44
       change-case: 5.3.0
       consola: 3.2.3
       element-plus: 2.4.1(vue@3.3.5)
@@ -1804,7 +1815,7 @@ packages:
   /builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.6.2
+      semver: 7.6.3
     dev: true
 
   /cac@6.7.14:
@@ -2132,7 +2143,7 @@ packages:
       '@one-ini/wasm': 0.1.1
       commander: 10.0.1
       minimatch: 9.0.1
-      semver: 7.6.2
+      semver: 7.6.3
     dev: true
 
   /electron-to-chromium@1.4.616:
@@ -3599,7 +3610,7 @@ packages:
     dependencies:
       hosted-git-info: 7.0.1
       is-core-module: 2.13.0
-      semver: 7.6.2
+      semver: 7.6.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -4107,7 +4118,6 @@ packages:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
     hasBin: true
-    dev: false
 
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}

@@ -16,6 +16,9 @@ const TrumpClockWidget = new Widget({
   previewImage: '/images/preview_trump.png',
   path: '/widget/trump_clock',
   configPagePath: undefined,
+  socialLinks: [
+    { name: 'github', link: 'https://github.com/rtugeek/clock' }
+  ]
 })
 
 export default TrumpClockWidget

@@ -18,12 +18,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.5.0",
-    "@widget-js/core": "^24.1.1-beta.40",
-    "@widget-js/vue3": "^24.1.1-beta.45",
+    "@widget-js/core": "^24.1.1-beta.47",
+    "@widget-js/vue3": "^24.1.1-beta.48",
     "dayjs": "^1.11.10",
     "element-plus": "^2.4.1",
     "vue": "^3.3.4",
-    "vue-i18n": "10",
+    "vue-i18n": "10.0.4",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

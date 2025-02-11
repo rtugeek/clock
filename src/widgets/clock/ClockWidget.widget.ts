@@ -20,5 +20,8 @@ const ClockWidgetDefine = new Widget({
   minHeight: 2,
   maxHeight: 4,
   previewImage: '/images/preview_clock.png',
+  socialLinks: [
+    { name: 'github', link: 'https://github.com/rtugeek/clock' }
+  ]
 })
 export default ClockWidgetDefine

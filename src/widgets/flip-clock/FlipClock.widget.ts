@@ -15,6 +15,9 @@ const FlipClockWidgetDefine = new Widget({
   minHeight: 2,
   categories: ['time'],
   maxHeight: 2,
+  socialLinks: [
+    { name: 'github', link: 'https://github.com/rtugeek/clock' }
+  ],
   previewImage: '/images/preview_flip_clock.png',
   path: '/widget/flip_clock',
 })

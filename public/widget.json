@@ -58,7 +58,13 @@
         "time"
       ],
       "supportDeployMode": 17,
-      "routes": []
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
     },
     {
       "name": "cn.widgetjs.widgets.clock.mickey_clock",
@@ -94,7 +100,13 @@
         "time"
       ],
       "supportDeployMode": 17,
-      "routes": []
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
     },
     {
       "name": "cn.widgetjs.widgets.clock.glitch",
@@ -130,7 +142,13 @@
         "time"
       ],
       "supportDeployMode": 17,
-      "routes": []
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
     },
     {
       "name": "cn.widgetjs.widgets.flip_clock",
@@ -166,7 +184,13 @@
         "time"
       ],
       "supportDeployMode": 17,
-      "routes": []
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
     },
     {
       "name": "cn.widgetjs.widgets.clock.default",
@@ -203,7 +227,13 @@
       ],
       "supportDeployMode": 17,
       "configPagePath": "/widget/config/clock",
-      "routes": []
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
     }
   ],
   "pages": []

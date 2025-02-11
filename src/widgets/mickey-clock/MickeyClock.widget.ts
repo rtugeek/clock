@@ -23,6 +23,9 @@ const MickeyClockWidgetDefine = new Widget({
   maxHeight: 3,
   previewImage: '/images/preview_micky_clock.png',
   path: url,
+  socialLinks: [
+    { name: 'github', link: 'https://github.com/rtugeek/clock' }
+  ]
 })
 
 export default MickeyClockWidgetDefine
