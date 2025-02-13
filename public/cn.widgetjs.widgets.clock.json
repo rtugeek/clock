@@ -96,45 +96,11 @@
       "meta": {},
       "backgroundThrottling": true,
       "previewImage": "/images/preview_text_clock.png",
-      "categories": [],
-      "supportDeployMode": 17,
-      "configPagePath": "/widget/config/text_clock?width=600&height=500&frame=true&transparent=false",
-      "routes": []
-    },
-    {
-      "name": "cn.widgetjs.widgets.clock.mickey_clock",
-      "title": {
-        "zh-CN": "米奇表盘",
-        "en-US": "Mickey Clock"
-      },
-      "description": {
-        "zh-CN": "复古米老鼠表盘",
-        "en-US": "Retro Mickey Mouse watch dial"
-      },
-      "keywords": [
-        "recommend"
-      ],
-      "security": false,
-      "permissions": [],
-      "lang": "zh-CN",
-      "width": 2,
-      "height": 2,
-      "maxWidth": 3,
-      "webviewTag": false,
-      "maxHeight": 3,
-      "minWidth": 2,
-      "minHeight": 2,
-      "movable": true,
-      "singleton": false,
-      "resizable": true,
-      "path": "/widget/mickey_clock",
-      "meta": {},
-      "backgroundThrottling": true,
-      "previewImage": "/images/preview_micky_clock.png",
       "categories": [
         "time"
       ],
       "supportDeployMode": 17,
+      "configPagePath": "/widget/config/text_clock?width=600&height=500&frame=true&transparent=false",
       "routes": [],
       "socialLinks": [
         {
@@ -173,6 +139,48 @@
       "meta": {},
       "backgroundThrottling": true,
       "previewImage": "/images/preview_glitch_clock.png",
+      "categories": [
+        "time"
+      ],
+      "supportDeployMode": 17,
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
+    },
+    {
+      "name": "cn.widgetjs.widgets.clock.mickey_clock",
+      "title": {
+        "zh-CN": "米奇表盘",
+        "en-US": "Mickey Clock"
+      },
+      "description": {
+        "zh-CN": "复古米老鼠表盘",
+        "en-US": "Retro Mickey Mouse watch dial"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 2,
+      "height": 2,
+      "maxWidth": 3,
+      "webviewTag": false,
+      "maxHeight": 3,
+      "minWidth": 2,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/mickey_clock",
+      "meta": {},
+      "backgroundThrottling": true,
+      "previewImage": "/images/preview_micky_clock.png",
       "categories": [
         "time"
       ],

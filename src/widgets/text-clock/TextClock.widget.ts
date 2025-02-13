@@ -5,7 +5,7 @@ const TextClockWidget = new Widget({
   title: { 'zh-CN': '文本时钟', 'en-US': 'Text Clock' },
   description: { 'zh-CN': '简单的文本时钟', 'en-US': 'Simple Text Clock' },
   keywords: [WidgetKeyword.RECOMMEND],
-  categories: [],
+  categories: ['time'],
   lang: 'zh-CN',
   width: 4,
   height: 2,
@@ -15,6 +15,9 @@ const TextClockWidget = new Widget({
   maxHeight: 2,
   previewImage: '/images/preview_text_clock.png',
   path: '/widget/text_clock',
+  socialLinks: [
+    { name: 'github', link: 'https://github.com/rtugeek/clock' }
+  ],
   configPagePath:
     '/widget/config/text_clock?width=600&height=500&frame=true&transparent=false',
 })
