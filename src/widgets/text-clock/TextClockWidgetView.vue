@@ -9,7 +9,7 @@ import { ref } from 'vue'
 
 dayjs.extend(weekday)
 useWidget()
-const time = useDateFormat(useNow(), 'HH:mm')
+const time = useDateFormat(useNow(), 'HH:mm:ss')
 const date = ref('')
 const weekdayStr = ref('')
 const lunar = ref(Lunar.fromDate(new Date()))
@@ -48,7 +48,7 @@ update()
   justify-content: center;
   color: var(--widget-color);
   .time{
-    font-size: calc(5 * var(--widget-font-size));
+    font-size: calc(4 * var(--widget-font-size));
     font-family: 'FiraCode', sans-serif;
   }
 }
