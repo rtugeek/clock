@@ -1,6 +1,7 @@
 import type { RouteRecordRaw } from 'vue-router'
 import ClockWidgetDefine from '@/widgets/clock/ClockWidget.widget'
 
+const path = ClockWidgetDefine.configPagePath!.split('?')[0]
 const ClockWidgetRoutes: RouteRecordRaw[] = [
   {
     path: ClockWidgetDefine.path,
@@ -9,7 +10,7 @@ const ClockWidgetRoutes: RouteRecordRaw[] = [
       import(/* webpackChunkName: "cn.widgetjs.widgets.clock" */ './ClockWidgetView.vue')
   },
   {
-    path: ClockWidgetDefine.configPagePath!,
+    path,
     name: `${ClockWidgetDefine.name}.config`,
     component: () =>
       import(

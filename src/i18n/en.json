@@ -1,0 +1,18 @@
+{
+  "continents": {
+    "asia": "Asia",
+    "europe": "Europe",
+    "america": "America",
+    "africa": "Africa",
+    "australia": "Australia",
+    "antarctica": "Antarctica"
+  },
+  "labels": {
+    "selectTimezone": "Select Timezone",
+    "showTimezone": "Show Timezone"
+  },
+  "placeholders": {
+    "selectContinent": "Select Continent",
+    "selectTimezone": "Select Timezone"
+  }
+}

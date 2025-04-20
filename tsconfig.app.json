@@ -2,21 +2,25 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "composite": true,
+    "target": "ESNext",
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "lib": [ "ES2021.String"]
   },
   "types": [
-    "@widget-js/vue3/global"
+    "@widget-js/vue3/global",
+    "element-plus/global"
   ],
   "include": [
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
-    "src/**/*.widget.ts"
+    "src/**/*.widget.ts",
+    "/types/Intl.d.ts"
   ],
   "exclude": [
     "src/**/__tests__/*"

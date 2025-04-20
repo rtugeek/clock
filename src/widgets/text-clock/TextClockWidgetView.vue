@@ -28,7 +28,7 @@ update()
       <div class="time">
         {{ time }}
       </div>
-      <div class="text-center flex gap-2 w-full justify-center">
+      <div class="text-center flex gap-2 w-full justify-center items-center">
         <div>{{ date }}</div>
         <div>{{ weekdayStr }} </div>
         <div>{{ lunar.toString().split('年')[1] }}</div>

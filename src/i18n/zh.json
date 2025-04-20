@@ -1,0 +1,18 @@
+{
+  "continents": {
+    "asia": "亚洲",
+    "europe": "欧洲",
+    "america": "美洲",
+    "africa": "非洲",
+    "australia": "大洋洲",
+    "antarctica": "南极洲"
+  },
+  "labels": {
+    "selectTimezone": "选择时区",
+    "showTimezone": "显示时区"
+  },
+  "placeholders": {
+    "selectContinent": "选择大陆",
+    "selectTimezone": "选择时区"
+  }
+}

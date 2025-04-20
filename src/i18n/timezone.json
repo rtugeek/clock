@@ -1,0 +1,114 @@
+[
+  {
+    "region": "Asia",
+    "regionName": {
+      "en": "Asia",
+      "zh": "亚洲"
+    },
+    "timezones": [
+      { "value": "Asia/Shanghai", "label": { "en": "Shanghai", "zh": "上海" } },
+      { "value": "Asia/Tokyo", "label": { "en": "Tokyo", "zh": "东京" } },
+      { "value": "Asia/Seoul", "label": { "en": "Seoul", "zh": "首尔" } },
+      { "value": "Asia/Hong_Kong", "label": { "en": "Hong Kong", "zh": "香港" } },
+      { "value": "Asia/Bangkok", "label": { "en": "Bangkok", "zh": "曼谷" } },
+      { "value": "Asia/Kolkata", "label": { "en": "Kolkata", "zh": "加尔各答" } },
+      { "value": "Asia/Dubai", "label": { "en": "Dubai", "zh": "迪拜" } },
+      { "value": "Asia/Singapore", "label": { "en": "Singapore", "zh": "新加坡" } },
+      { "value": "Asia/Taipei", "label": { "en": "Taipei", "zh": "台北" } },
+      { "value": "Asia/Jakarta", "label": { "en": "Jakarta", "zh": "雅加达" } }
+    ]
+  },
+  {
+    "region": "Europe",
+    "regionName": {
+      "en": "Europe",
+      "zh": "欧洲"
+    },
+    "timezones": [
+      { "value": "Europe/London", "label": { "en": "London", "zh": "伦敦" } },
+      { "value": "Europe/Berlin", "label": { "en": "Berlin", "zh": "柏林" } },
+      { "value": "Europe/Paris", "label": { "en": "Paris", "zh": "巴黎" } },
+      { "value": "Europe/Moscow", "label": { "en": "Moscow", "zh": "莫斯科" } },
+      { "value": "Europe/Rome", "label": { "en": "Rome", "zh": "罗马" } },
+      { "value": "Europe/Madrid", "label": { "en": "Madrid", "zh": "马德里" } },
+      { "value": "Europe/Amsterdam", "label": { "en": "Amsterdam", "zh": "阿姆斯特丹" } },
+      { "value": "Europe/Zurich", "label": { "en": "Zurich", "zh": "苏黎世" } },
+      { "value": "Europe/Stockholm", "label": { "en": "Stockholm", "zh": "斯德哥尔摩" } },
+      { "value": "Europe/Prague", "label": { "en": "Prague", "zh": "布拉格" } }
+    ]
+  },
+  {
+    "region": "America",
+    "regionName": {
+      "en": "America",
+      "zh": "美洲"
+    },
+    "timezones": [
+      { "value": "America/New_York", "label": { "en": "New York", "zh": "纽约" } },
+      { "value": "America/Chicago", "label": { "en": "Chicago", "zh": "芝加哥" } },
+      { "value": "America/Denver", "label": { "en": "Denver", "zh": "丹佛" } },
+      { "value": "America/Los_Angeles", "label": { "en": "Los Angeles", "zh": "洛杉矶" } },
+      { "value": "America/Sao_Paulo", "label": { "en": "Sao Paulo", "zh": "圣保罗" } },
+      { "value": "America/Toronto", "label": { "en": "Toronto", "zh": "多伦多" } },
+      { "value": "America/Vancouver", "label": { "en": "Vancouver", "zh": "温哥华" } },
+      { "value": "America/Mexico_City", "label": { "en": "Mexico City", "zh": "墨西哥城" } },
+      { "value": "America/Bogota", "label": { "en": "Bogotá", "zh": "波哥大" } },
+      { "value": "America/Argentina/Buenos_Aires", "label": { "en": "Buenos Aires", "zh": "布宜诺斯艾利斯" } }
+    ]
+  },
+  {
+    "region": "Africa",
+    "regionName": {
+      "en": "Africa",
+      "zh": "非洲"
+    },
+    "timezones": [
+      { "value": "Africa/Cairo", "label": { "en": "Cairo", "zh": "开罗" } },
+      { "value": "Africa/Johannesburg", "label": { "en": "Johannesburg", "zh": "约翰内斯堡" } },
+      { "value": "Africa/Nairobi", "label": { "en": "Nairobi", "zh": "内罗毕" } },
+      { "value": "Africa/Lagos", "label": { "en": "Lagos", "zh": "拉各斯" } },
+      { "value": "Africa/Casablanca", "label": { "en": "Casablanca", "zh": "卡萨布兰卡" } }
+    ]
+  },
+  {
+    "region": "Australia",
+    "regionName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "timezones": [
+      { "value": "Australia/Sydney", "label": { "en": "Sydney", "zh": "悉尼" } },
+      { "value": "Australia/Melbourne", "label": { "en": "Melbourne", "zh": "墨尔本" } },
+      { "value": "Australia/Brisbane", "label": { "en": "Brisbane", "zh": "布里斯班" } },
+      { "value": "Australia/Perth", "label": { "en": "Perth", "zh": "珀斯" } },
+      { "value": "Australia/Adelaide", "label": { "en": "Adelaide", "zh": "阿德莱德" } }
+    ]
+  },
+  {
+    "region": "Pacific",
+    "regionName": {
+      "en": "Pacific",
+      "zh": "太平洋"
+    },
+    "timezones": [
+      { "value": "Pacific/Auckland", "label": { "en": "Auckland", "zh": "奥克兰" } },
+      { "value": "Pacific/Fiji", "label": { "en": "Fiji", "zh": "斐济" } },
+      { "value": "Pacific/Guam", "label": { "en": "Guam", "zh": "关岛" } },
+      { "value": "Pacific/Honolulu", "label": { "en": "Honolulu", "zh": "檀香山" } },
+      { "value": "Pacific/Tahiti", "label": { "en": "Tahiti", "zh": "大溪地" } }
+    ]
+  },
+  {
+    "region": "UTC",
+    "regionName": {
+      "en": "UTC",
+      "zh": "协调世界时"
+    },
+    "timezones": [
+      { "value": "UTC", "label": { "en": "UTC", "zh": "协调世界时" } },
+      { "value": "Etc/GMT+0", "label": { "en": "GMT+0", "zh": "格林威治+0" } },
+      { "value": "Etc/GMT-0", "label": { "en": "GMT-0", "zh": "格林威治-0" } },
+      { "value": "Etc/UTC", "label": { "en": "Etc UTC", "zh": "协调世界时" } }
+    ]
+  }
+]

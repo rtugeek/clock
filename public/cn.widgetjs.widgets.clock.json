@@ -269,7 +269,7 @@
         "time"
       ],
       "supportDeployMode": 17,
-      "configPagePath": "/widget/config/clock",
+      "configPagePath": "/widget/config/clock?frame=true&transparent=false&width=500&height=500",
       "routes": [],
       "socialLinks": [
         {

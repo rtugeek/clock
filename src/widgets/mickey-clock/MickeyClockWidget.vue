@@ -31,7 +31,6 @@ export default {
 
 <template>
   <div class="mickey-clock">
-    <div class="bg" />
     <div id="watch">
       <div class="digit">
         <span>1</span>
@@ -77,24 +76,20 @@ export default {
 </template>
 
 <style scoped lang='scss'>
-.bg {
-  width: 100%;
-  left: 0;
-  top: 0;
-  height: 100%;
+.mickey-clock {
+  width: var(--widget-inner-width);
+  height: var(--widget-inner-height);
+  background: radial-gradient(grey, black 70%);
   border-radius: var(--widget-border-radius);
-  background: #000;
 }
 
 #watch {
   position: absolute;
   top: 50%;
   left: 50%;
-  border-radius: 50%;
   width: 450px;
   height: 450px;
   transform: translate(-50%, -50%) scale(0.28);
-  background: radial-gradient(grey, black 70%);
   color: #fff;
   font: bold 54px Arial, sans-serif;
 }

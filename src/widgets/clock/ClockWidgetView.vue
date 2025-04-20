@@ -1,13 +1,17 @@
 <script lang='ts' setup>
 import { computed, ref } from 'vue'
 import { useInterval, useWindowSize } from '@vueuse/core'
-import dayjs from 'dayjs'
-import { useWidgetTheme } from '@widget-js/vue3'
+import { useWidgetStorage, useWidgetTheme } from '@widget-js/vue3'
+import { useWidgetTimeZone } from '@/composition/useWidgetTimeZone'
 
 const secondDeg = ref(0)
 const hourDeg = ref(0)
 const minuteDeg = ref(0)
+const { timezoneLabel, getNow } = useWidgetTimeZone()
+const showTimezone = useWidgetStorage('show-timezone', false)
+
 useWidgetTheme()
+
 function calAddDeg(current: number, max: number, previousDeg: number, deg: number) {
   if (current == 0) {
     current = max
@@ -21,14 +25,13 @@ function calAddDeg(current: number, max: number, previousDeg: number, deg: numbe
 }
 
 function getHour() {
-  const hour = dayjs().hour()
+  const hour = getNow().hour()
   return hour > 12 ? hour - 12 : hour
 }
 
 function updateTime() {
-  const now = dayjs()
-  const second = now.second()
-  const minute = now.minute()
+  const second = getNow().second()
+  const minute = getNow().minute()
   secondDeg.value = secondDeg.value + calAddDeg(second, 60, secondDeg.value, 6)
   minuteDeg.value = (minute / 60 * 360)
   hourDeg.value = (getHour() / 12 * 360) + (minute / 60 * 30)
@@ -57,6 +60,9 @@ const fillClass = computed(() => {
       <div class="circles" :class="{ ...fillClass }">
         <div class="center white-bg" />
         <img class="center" src="./images/clock_bg.png" alt="">
+        <div v-if="showTimezone" class="timezone">
+          {{ timezoneLabel }}
+        </div>
         <img
           class="center hour tick" :style="{
             transform: `rotate(${hourDeg}deg)`,
@@ -98,12 +104,12 @@ body * {
     pointer-events: none;
   }
 
-  .circles.fill-width > * {
+  .circles.fill-width > *:not(.timezone) {
     width: 100%;
     aspect-ratio: 1;
   }
 
-  .circles.fill-height > * {
+  .circles.fill-height > *:not(.timezone) {
     height: 100%;
     aspect-ratio: 1;
   }
@@ -115,6 +121,21 @@ body * {
     bottom: 0;
     margin: auto;
     position: absolute;
+  }
+
+  .timezone {
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.8rem;
+    text-align: center;
+    color: #5b5b5b;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   }
 
   .tick {
@@ -129,7 +150,7 @@ body * {
   }
 
   .white-bg {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
     background-position: center;
     border-radius: 50%;
     transform: scale(0.9);

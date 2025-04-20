@@ -20,27 +20,3 @@ button {
   background-color: transparent;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
