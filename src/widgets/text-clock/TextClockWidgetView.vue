@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useWidget } from '@widget-js/vue3'
-import { useDateFormat, useNow } from '@vueuse/core'
+import { useDateFormat, useIntervalFn, useNow } from '@vueuse/core'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import weekday from 'dayjs/plugin/weekday'
@@ -19,7 +19,9 @@ function update() {
   lunar.value = Lunar.fromDate(new Date())
 }
 
-update()
+useIntervalFn(() => {
+  update()
+}, 60 * 1000, { immediateCallback: true, immediate: true })
 </script>
 
 <template>
