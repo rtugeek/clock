@@ -20,6 +20,7 @@
     "base": "/clock",
     "hostname": "widgetjs.cn"
   },
+  "zipUrl": "https://widgetjs.cn/clock/widget.zip",
   "hash": true,
   "url": "",
   "widgets": [
@@ -110,48 +111,6 @@
       ]
     },
     {
-      "name": "cn.widgetjs.widgets.clock.glitch",
-      "title": {
-        "zh-CN": "故障时钟",
-        "en-US": "Glitch Clock"
-      },
-      "description": {
-        "zh-CN": "Glitch",
-        "en-US": "Glitch"
-      },
-      "keywords": [
-        "recommend"
-      ],
-      "security": false,
-      "permissions": [],
-      "lang": "zh-CN",
-      "width": 4,
-      "height": 2,
-      "maxWidth": 4,
-      "webviewTag": false,
-      "maxHeight": 2,
-      "minWidth": 4,
-      "minHeight": 2,
-      "movable": true,
-      "singleton": false,
-      "resizable": true,
-      "path": "/widget/glitch",
-      "meta": {},
-      "backgroundThrottling": true,
-      "previewImage": "/images/preview_glitch_clock.png",
-      "categories": [
-        "time"
-      ],
-      "supportDeployMode": 17,
-      "routes": [],
-      "socialLinks": [
-        {
-          "name": "github",
-          "link": "https://github.com/rtugeek/clock"
-        }
-      ]
-    },
-    {
       "name": "cn.widgetjs.widgets.clock.mickey_clock",
       "title": {
         "zh-CN": "米奇表盘",
@@ -181,6 +140,48 @@
       "meta": {},
       "backgroundThrottling": true,
       "previewImage": "/images/preview_micky_clock.png",
+      "categories": [
+        "time"
+      ],
+      "supportDeployMode": 17,
+      "routes": [],
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/clock"
+        }
+      ]
+    },
+    {
+      "name": "cn.widgetjs.widgets.clock.glitch",
+      "title": {
+        "zh-CN": "故障时钟",
+        "en-US": "Glitch Clock"
+      },
+      "description": {
+        "zh-CN": "Glitch",
+        "en-US": "Glitch"
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 4,
+      "height": 2,
+      "maxWidth": 4,
+      "webviewTag": false,
+      "maxHeight": 2,
+      "minWidth": 4,
+      "minHeight": 2,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/widget/glitch",
+      "meta": {},
+      "backgroundThrottling": true,
+      "previewImage": "/images/preview_glitch_clock.png",
       "categories": [
         "time"
       ],

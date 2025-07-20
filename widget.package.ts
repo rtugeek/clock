@@ -16,6 +16,7 @@ export default new WidgetPackage({
     'zh-CN': '时钟组件',
     'en-US': 'Clock'
   },
+  zipUrl: 'https://widgetjs.cn/clock/widget.zip',
   entry: 'index.html',
   title: { 'zh-CN': '时钟组件合辑', 'en-US': 'Clock Widgets' },
   hash: true,
